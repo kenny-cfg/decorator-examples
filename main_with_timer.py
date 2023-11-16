@@ -4,10 +4,10 @@ from decorators.timer import Timer
 @Timer
 def add_lots_of_numbers():
     total = 0
-    for x in range(0, 100000000):
+    for x in range(0, 100000):
         total += x
-    print(total)
+    return total
 
 
 if __name__ == '__main__':
-    add_lots_of_numbers()
+    print(add_lots_of_numbers())
