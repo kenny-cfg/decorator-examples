@@ -1,7 +1,6 @@
-counter = 0
-
-
 def count(func):
+    counter = 0
+
     def wrapper(*args, **kwargs):
         global counter
         counter += 1
